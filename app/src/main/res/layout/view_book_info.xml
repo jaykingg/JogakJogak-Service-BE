@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <android.support.v7.widget.AppCompatTextView
+    android:id="@+id/tv_title"
+    android:textStyle="bold"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:ellipsize="end"
+    android:gravity="center_horizontal"
+    android:maxLines="1"
+    android:textColor="@color/gray"
+    android:textSize="18sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="책 이름" />
+
+  <android.support.v7.widget.AppCompatTextView
+    android:id="@+id/tv_author"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:textColor="@color/warmGray"
+    android:textSize="11sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_title"
+    tools:text="저자의 이름" />
+
+  <android.support.v7.widget.AppCompatImageView
+    android:id="@+id/iv_book"
+    android:layout_width="148dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="12dp"
+    android:src="@color/warmGray"
+    app:layout_constraintDimensionRatio="H,1:1.4"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_author" />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/btn_review"
+    android:layout_width="76dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/btn_round_red"
+    android:text="리뷰쓰기"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iv_book" />
+
+  <android.support.v7.widget.CardView
+    android:id="@+id/container_status"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    app:cardCornerRadius="5dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_review">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="4dp"
+      android:paddingBottom="4dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_review">
+
+      <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_review_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/warmGray"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="35" />
+
+      <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_review_count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리뷰 수"
+        android:textColor="@color/warmGray"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_review_count"
+        app:layout_constraintRight_toRightOf="@+id/tv_review_count"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_count" />
+
+      <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/warmGray"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="40" />
+
+      <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_like_count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아요"
+        android:textColor="@color/warmGray"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_like_count"
+        app:layout_constraintRight_toRightOf="@+id/tv_like_count"
+        app:layout_constraintTop_toBottomOf="@+id/tv_like_count" />
+
+      <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_hate_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/warmGray"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="40" />
+
+      <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_hate_count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="싫어요"
+        android:textColor="@color/warmGray"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_hate_count"
+        app:layout_constraintRight_toRightOf="@+id/tv_hate_count"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hate_count" />
+
+    </android.support.constraint.ConstraintLayout>
+  </android.support.v7.widget.CardView>
+
+  <android.support.v7.widget.AppCompatTextView
+    android:layout_width="44dp"
+    android:layout_height="24dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="24dp"
+    android:gravity="center"
+    android:text="더보기"
+    android:textColor="@color/warmGray"
+    android:textSize="12sp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/container_status" />
+
+
+</android.support.constraint.ConstraintLayout>

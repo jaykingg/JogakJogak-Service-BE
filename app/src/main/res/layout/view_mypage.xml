@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="180dp"
+  android:layout_marginBottom="16dp"
+  android:layout_marginLeft="24dp"
+  android:layout_marginRight="24dp"
+  app:cardCornerRadius="5dp">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp">
+
+    <android.support.v7.widget.AppCompatImageView
+      android:id="@+id/iv_book"
+      android:layout_width="63dp"
+      android:layout_height="106dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:src="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_name"
+      android:textStyle="bold"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@color/warmGray"
+      android:textSize="12sp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="@+id/iv_book"
+      app:layout_constraintTop_toBottomOf="@+id/iv_book"
+      tools:text="책 이름 asdad asdada" />
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_author"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@color/warmGray"
+      android:textSize="10sp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="@+id/iv_book"
+      app:layout_constraintTop_toBottomOf="@+id/tv_name"
+      tools:text="저자 이름 adasdasdadad" />
+
+    <android.support.v7.widget.AppCompatTextView
+      android:id="@+id/tv_content"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="40dp"
+      android:layout_marginLeft="22dp"
+      android:layout_marginRight="28dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toRightOf="@+id/iv_book"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="adasdadsa ada dsada dad ad asd ad asada as dadsa sda asda ds a adasdadsa ada dsada dad ad asd ad asada as dadsa sda asda ds a adasdadsa ada dsada dad ad asd ad asada as dadsa sda asda ds a adasdadsa ada dsada dad ad asd ad asada as dadsa sda asda ds a adasdadsa ada dsada dad ad asd ad asada as dadsa sda asda ds a adasdadsa ada dsada dad ad asd ad asada as dadsa sda asda ds a adasdadsa ada dsada dad ad asd ad asada as dadsa sda asda ds a" />
+
+  </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
